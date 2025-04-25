@@ -15,7 +15,10 @@ def choose_difficulty():
     - str: Valid difficulty levels are ('easy', 'medium', 'hard').
     """
     #------------------------
-    # Add your code here
+    diff = ["easy","medium","hard"]
+    a = input("Choose difficulty 'easy', 'medium', 'hard':")
+    if a in diff:
+        return a
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
