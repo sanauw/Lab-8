@@ -113,8 +113,8 @@ def remove_question(category, question):
     Returns:
     - None
     """
-    if select_random_question(category):
-        
+    for j in questions[category]:
+        category.remove(question)
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
