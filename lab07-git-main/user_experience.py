@@ -34,7 +34,11 @@ def display_leaderboard(leaderboard):
     The function sorts the leaderboard by scores in descending order and prints the names and scores of the top players. If the leaderboard is empty, it prints a message indicating that there are no scores to display.
     """
     #------------------------
-    # Add your code here
+    if len(leaderboard) == 0:
+        print("No scores to display")
+    else:
+        values = dict(sorted(leaderboard.items(), key=lambda item: item[1], reverse = True))
+        print(values)
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
