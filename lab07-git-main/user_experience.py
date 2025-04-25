@@ -123,7 +123,11 @@ def fifty_fifty_lifeline(correct_answer, options):
     This function is designed to be used once per game session by a player who chooses to use the 50/50 lifeline. It randomly selects one incorrect answer to keep along with the correct answer and removes the other options.
     """
     #------------------------
-    # Add your code here
+    for e in options:
+        if e != correct_answer and len(options) >2:
+            options.remove(e)
+        if len(options) == 2:
+            return options
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
