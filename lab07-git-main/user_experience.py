@@ -96,7 +96,10 @@ def provide_feedback(is_correct):
     - is it incorrect? "Sorry, that's incorrect."
     """
     #------------------------
-    # Add your code here
+    if is_correct == True:
+        print("Well done!")
+    elif is_correct == False:
+        print("Sorry, that's incorrect.")
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
